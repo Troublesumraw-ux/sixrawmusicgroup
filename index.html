@@ -57,6 +57,8 @@
 
     <!-- Product Collection Grid -->
     <section id="shop" class="max-w-6xl mx-auto px-6 py-16 border-t border-stone-200">
+<div class="main-container">
+    <div class="border-lettering-frame">
         <div class="mb-10">
             <h2 class="text-3xl font-extrabold text-stone-950 tracking-tight">The Core Collection</h2>
             <p class="text-stone-500 mt-2">Customizable essentials built for small spaces.</p>
@@ -108,20 +110,26 @@
       // New Release Drops
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      
-      <!-- Product 1: Stealth Wall Desk -->
-      <div class="border border-stone-200 bg-white p-6 rounded-lg shadow-sm flex flex-col justify-between">
-        <div>
-          <h3 class="text-xl font-bold tracking-tight text-stone-900 mb-2">The "Stealth" Folding Wall Desk</h3>
-          <p class="text-stone-600 text-sm leading-relaxed mb-6">Murphy-style workspace. Folds flat against the wall as a custom-framed canvas artwork profile when closed.</p>
-          <div class="space-y-3 text-sm text-stone-700">
-            <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" class="accent-stone-900"> Add 12-14" Media Screen</label>
-            <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" class="accent-stone-900"> Add Multi-Device Charging Ports</label>
-            <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" class="accent-stone-900"> Add Integrated Bluetooth Speakers</label>
-          </div>
-        </div>
-        <button class="w-full mt-6 bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider py-3 px-4 rounded transition">Configure Workspace</button>
-      </div>
+            <!-- Product 1: Stealth Wall Desk Customizer -->
+<div class="product-customizer">
+    <label class="flex items-center gap-2 text-stone-300 font-medium mb-2">
+        <input type="checkbox" name="desk-tv" value="350" class="customizer-option accent-stone-700"> 
+        Built-in 12-14" TV Screen (+$350)
+    </label>
+    <label class="flex items-center gap-2 text-stone-300 font-medium mb-2">
+        <input type="checkbox" name="desk-audio" value="120" class="customizer-option accent-stone-700"> 
+        Integrated Bluetooth Speakers (+$120)
+    </label>
+    <label class="flex items-center gap-2 text-stone-300 font-medium mb-2">
+        <input type="checkbox" name="desk-power" value="45" class="customizer-option accent-stone-700"> 
+        USB-C Fast Charging Ports (+$45)
+    </label>
+    <label class="flex items-center gap-2 text-stone-300 font-medium mb-4">
+        <input type="checkbox" name="desk-mural" value="200" class="customizer-option accent-stone-700"> 
+        Custom Graphic Graffiti Mural Cover (+$200)
+    </label>
+</div>
+
 
       <!-- Product 2: Industrial Furniture -->
       <div class="border border-stone-200 bg-white p-6 rounded-lg shadow-sm flex flex-col justify-between">
@@ -144,6 +152,8 @@
     </div>
   </section>
   <!-- END OF NEW DROPS CATALOG -->
+    </div>
+</div>
     </section>
 
 </body>

@@ -40,3 +40,53 @@ body {
   background-size: 3px 3px;
 }
 
+/* Core Webpage Layout Wrapper */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #0d0d0d; /* Deep grimy dark background */
+    padding: 20px;
+}
+
+/* Custom Lettered Border Frame */
+.border-lettering-frame {
+    position: relative;
+    border: 4px solid #1a1a1a; /* Dark metallic border shell */
+    padding: 40px;
+    background: linear-gradient(145deg, #111111, #161616);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 255, 255, 0.03);
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Injecting repeating "SIXRAW SECTION" border lettering */
+.border-lettering-frame::before {
+    content: "SIXRAW SECTION   •   SIXRAW SECTION   •   SIXRAW SECTION";
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: #0d0d0d;
+    padding: 0 10px;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    color: #444444; /* Grimy raw text tint */
+    text-transform: uppercase;
+}
+
+.border-lettering-frame::after {
+    content: "SIXRAW MUSIC GROUP   •   SIXRAW MUSIC GROUP";
+    position: absolute;
+    bottom: -12px;
+    right: 20px;
+    background: #0d0d0d;
+    padding: 0 10px;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    color: #444444;
+    text-transform: uppercase;
+}
