@@ -3,9 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const BASE_PRICE = 500; 
     
     // Find the checkout button or a price indicator element to display updates
-    // (We will target the main button inside Product 1's card)
-    const productCard = document.querySelector('.product-customizer').parentElement;
-    const actionButton = productCard.querySelector('button, a');
+    const productCard = document.querySelector('.product-customizer')?.parentElement;
+    const actionButton = productCard?.querySelector('button, a');
     
     const checkboxes = document.querySelectorAll(".customizer-option");
 
@@ -20,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         const finalPrice = BASE_PRICE + addonTotal;
         
-        // Dynamically update the text on the button to reflect total price
+        // Dynamically update the text on the button to reflect total price if available
         if (actionButton) {
             actionButton.textContent = `Buy Now - $${finalPrice}`;
         }
@@ -34,4 +33,3 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initialize display price on load
     updateCalculatedPrice();
 });
-
